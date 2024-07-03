@@ -20,4 +20,17 @@ public class Sample {
     return description;
   }
   
+  public String toJson() {
+	  StringBuilder sb = new StringBuilder();
+	  sb.append("{");
+	  sb.append("\"name\":\"");
+	  sb.append(name);
+	  sb.append("\",");
+	  sb.append("\"description\":\"");
+	  sb.append(description);
+	  sb.append("\"");
+	  sb.append("}");
+	  return sb.toString();
+  }
+  
 }
